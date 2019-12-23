@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    .top-bg {
+        background-image: linear-gradient(to top, rgba(13, 5, 5, 0.3) 30%, #fc6a6a);
+        height: calc(100vh - 72px);
+        animation: pulse 10s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            background-image: linear-gradient(to top, rgba(13, 5, 5, 0.3) 30%, #fc6a6a);
+        }
+        10% {
+            background-image: linear-gradient(to left, rgba(13, 5, 5, 0.3) 30%, #3598d1);
+        }
+        20% {
+            background-image: linear-gradient(to right, rgba(13, 5, 5, 0.3) 30%, #5eb053);
+        }
+        100% {
+            background-image: linear-gradient(to bottom, rgba(13, 5, 5, 0.3) 30%, #557abe);
+        }
+    }
+
+    .circle {
+        width: 250px;
+        height: 250px;
+        background: yellow;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container top-bg">
+        <h1>Animation is Fun!</h1>
+        <div class="circle">
+        </div>
+    </div>
+
+</body>
+
+</html>
